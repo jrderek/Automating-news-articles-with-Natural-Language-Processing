@@ -1,22 +1,21 @@
 # Automating-news-articles-with-Natural-Language-Processing
 
-
 Table of Contents
 
 Executive summary
 
 1. Introduction
-2. 
+
 3. Motivation
-4. 
+
 5. Approach
-6. 
+
 7. Data sources
-8. 
+
 9. Text pre-processing
-10. 
+ 
 11. EDA and Feature Engineering
-12. 
+
 13.1. Length analysis
 
 6.2. Named entity recognition (NER)
@@ -24,13 +23,13 @@ Executive summary
 6.3. Word cloud
 
 7. Text vectorization
-8. 
+
 9.1. TF-IDF
 
 7.2. Distributed representation
 
 8. Machine learning models
-9. 
+
 10.1. Experiment with a prototype
 
 8.1.1. NaiveBayes
@@ -55,9 +54,8 @@ Executive summary
 
 8.3.2. Classification with logistic regression
 
-
 9. Deep learning models
-10. 
+
 11.1. Data processing
 
 9.2. Convolutional neural network (CNN)
@@ -67,7 +65,7 @@ Executive summary
 9.4. BERT
 
 10. Model deployment
-11. 
+
 12.1. Production ready code and testing
 
 10.2. FastAPI
@@ -97,7 +95,9 @@ Machine learning model: This project adopted several machine learning algorithms
 
 Deep learning: Several deep learning architectures using convolutional neural network (CNN), long-short term memory network (LSTM), and transformers with BERT was examined for text classifications. The results were compared against the best-performing machine learning model. A CNN-based model was selected for the deployment.
 
-Model deployment: The code was refactored and used for the development of a modular codebase. PyTest was used for the development of the methods. FastAPI was used to create an app for the model, and Docker was used to containerize the app. GitHub actions were adopted to automatically deploy the image to the DockerHub registry and the automated deployment of the container to AWS elastic container services (ECS).
+Model deployment: The code was refactored and used for the development of a modular codebase. PyTest was used for the development of the methods. FastAPI was used to create an app for the model, and Docker was used to containerize the app. 
+
+GitHub actions were adopted to automatically deploy the image to the DockerHub registry and the automated deployment of the container to AWS elastic container services (ECS).
 
 The codebase and the detailed discussion of each stage are available through this repository.
 
@@ -127,7 +127,7 @@ Figure 1. The schematic of the techniques used for the model development
 
 4. Data sources
 
-The main source of data for this project is the Covid-19 Public Media Dataset by Anacode on Kaggle.
+The main source of data for this project is the https://www.kaggle.com/datasets/jannalipenkova/covid19-public-media-dataset.
 
 The database is a resource of over 350,000 online articles with full texts which were scraped from online media in the time span January 1 - December 31, 2020. The dataset includes articles from more than 60 English-language resources from various domains and is meant to provide a representative cross-section of the online content that was produced and absorbed during this period. The heart of this dataset are online articles in text form - thus, it is meant to be analyzed using Natural Language Processing and text mining. The data was scraped from a range of more than 60 high-impact blogs and news websites. We have been scraping the 65 websites continuously every day, after which we filtered them on Covid19-related keywords to keep only relevant articles in the dataset.
 
